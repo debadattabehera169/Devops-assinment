@@ -1,0 +1,86 @@
+# git toolkit
+1. To check the version of git:
+git –version
+2. Set configuration of git:
+git config -- global user.name “User_name”
+git config – global user.email “user_email”
+3. To show user :
+git config –list
+4. Create local repository:
+git init
+5. To show content of working directory:
+git status
+6. To add the code into staging area:
+git add .
+7. To add into local repo or to perform commit:
+git commit -m “message”
+8. To show which user is commited:
+git log
+9. To show all commit in one line
+git log – oneline
+10. To show the latest commit:
+git log -1
+11. To search something with some key value
+git log –grep “ignore” (it will show all the commit id which have ignore written)
+12. To show the code of commited task
+git show <commit id>
+13. To change the default branch name “master” to “main’’:
+git branch -m main
+14. Set connection of central repo with local repo:
+git remote add origin <central repo link>
+15. To send the code from local repo to central repo:
+git push origin main
+<enter user name>
+<enter password>
+16. To pull code from central to local:
+git pull origin main
+git log (to check)
+git show <commit id> ( to show the content)
+17. To ignore some file to commit:
+vi .gitignore (create a hidden file with the same name)
+ *.css
+ *.java
+ git add .gitignore
+ git commit -m <message>
+ git status (its excluded the .css and .java files from the commited list)
+18. To show all branches:
+git branch (it will give a (*) mark to the existing branch)
+19. Create a branch in git:
+git branch <branch_name)
+20. To change branch:
+git checkout <branch_1> (it enters into the branch 1)
+21. To delete branch:
+git branch -d <branch_name>
+git branch -D <branch_name>
+22. merge branches 
+git merge <branch_name> branch_1
+23. after merging if conflict occurs then:
+vi file1
+edit according to you and save to resolve the conflict.
+24. To stop an ongoing code for another code:
+git stash <stashed item>
+25. To show all the stashed item:
+git stash list
+26. To clear the stash item:
+git stash clear
+27. To reset staging area:
+git reset <file_name> (works on private area)
+git reset .
+28. To reset the code from both staging area and working directory:
+git reset – hard
+29. To undo an existing commit:
+git revert <commit id>
+30. Delete an untracked file:
+git clean -n (dry run)
+git clean -f (forcefully)
+31. To give any important commit a tag:
+git tag -a <tag_name> -m <message> <commit_id>
+32. To see the list of tag:
+git tag
+33. To see particular commit by tag:
+git show <tag_name>
+34. To delete a tag:
+git tag -d <tag_name>
+35. To clone a file from central repo to local repo:
+git clone <url of github repo> (it create a local repo in linux machine with same name as 
+the central repo
