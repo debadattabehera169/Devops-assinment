@@ -1,4 +1,4 @@
-# Devops-assinment
+# Assingment-2
 # Terraform:
 It is a tool for infrastructure provisioning and building infrastructure with the help of Code known as IaC(Infrastructure as Code). The main advantage of using this kind of tool is to modify the whole infrastructure and restructure it within seconds. As par the name suggests this kind of tool provides a mechanism where we need to write scripts that provide a full functional infrastructure.
 
